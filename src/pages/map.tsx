@@ -33,7 +33,7 @@ export const Map = () => {
     console.log(a);
 
     geocoder.geocode({ address: a }, (results, status) => {
-      if (status === 'OK') {
+      if (status === 'OK' && results != null) {
         // Create a marker with the converted lat/lng coordinates
         let lat = results[0].geometry.location.lat()
         let lng = results[0].geometry.location.lng()
@@ -72,7 +72,7 @@ export const Map = () => {
     });
 
     loader.load().then(() => {
-      map = new window.google.maps.Map(document.getElementById("map"), {
+      map = new window.google.maps.Map(document.getElementById("map")!, {
         center: deflt,
         zoom: 12,
       });
@@ -122,12 +122,13 @@ export const Map = () => {
   }
 
   useEffect(() => {
-    const successCallback = (position) => {
+    const successCallback = (position: GeolocationPosition) => {
+      console.log(position);
       deflt = { lat: position.coords.latitude, lng: position.coords.longitude };
       loadMap();
     };
     
-    const errorCallback = (error) => {
+    const errorCallback = (error: GeolocationPositionError) => {
       console.log(error);
     };
     
