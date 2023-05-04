@@ -1,0 +1,174 @@
+.LR {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.TB {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+
+button {
+    max-height: 10vh;
+}
+
+.location {
+    background-color: gray;
+    color: white;
+    max-width: fit-content;
+    border: 2pt solid darkslategray;
+    border-radius: 5pt;
+    margin: 3pt;
+    padding: 5pt;
+}
+
+.middle {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margins {
+    margin: 10px;
+}
+
+.topmargin {
+    margin-top: 5pt;
+}
+
+.centered {
+    justify-content: center;
+    align-content: center;
+}
+
+.flexspaced {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexspacedpadded {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15pt;
+}
+
+.padding {
+    padding: 4px;
+}
+
+.lesspadding {
+    margin: -1px;
+}
+
+.biggertext {
+    font-size: medium;
+}
+
+.smallertext {
+    font-size: small;
+}
+
+.grouping {
+    display: flex;
+    flex-direction: column;
+    min-width: 225pt;
+    flex-wrap: wrap;
+    padding: 2pt;
+    padding-left: 5pt;
+    border: 2pt solid lightgray;
+    border-radius: 5pt;
+    margin: 3pt;
+}
+
+.reptilefacts {
+    font-size: larger;
+    margin-right: 10pt;
+    width: max-content;
+}
+
+.newbutton {
+    margin-left: 5px;
+    margin-top: 1px;
+    padding: -15pt;
+    font-size: 10pt;
+    padding-top: 0;
+    height: min-content;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.trashcanbutton {
+    width: min-content;
+    height: min-content;
+    padding: 10pt;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.warn {
+    background-color: rgb(129, 0, 0);
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.warning {
+    background-color: red;
+    color: white;
+    opacity:1;
+    transition : all .1s;
+    justify-content: center;
+    align-items: center;
+}
+
+.warning.hidden {
+    background-color: rgb(129, 0, 0);
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition : all .2s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.sidetoside {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.scroll {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 80vh;
+    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.toptobottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.createblock {
+    display: flex;
+    flex-direction: row;
+    padding: 4pt;
+    border: 2pt solid grey;
+    border-radius: 5pt;
+  }
